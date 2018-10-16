@@ -1,7 +1,31 @@
 package com.yu;
 
-public class Person {
-	float height;
+import java.util.Scanner;
+
+public class Person {	
+	String studentName;
+	int english;
+	int math;
+	
+	public Person(String studentName,int english,int math){
+		this.studentName=studentName;
+		this.english=english;
+		this.math=math;
+	}
+	
+	public float average(){
+		float average =(float) (english+math)/2;
+		return average;
+	}
+	
+	public void print(){
+		System.out.print(studentName+"\t"+english+"\t"+math+"\t"+average()+"\n");
+	}
+
+	
+	
+	
+/*	float height;
 	float weight;
 
 	public Person(float weight, float height) {
@@ -17,5 +41,5 @@ public class Person {
 	public void hello() {
 		System.out.println("Hello");
 	}
-
+*/
 }
