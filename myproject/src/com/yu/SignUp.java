@@ -12,11 +12,12 @@ public class SignUp {
 		if(adutl){
 			System.out.print("輸入年齡:");
 			int age=in.nextInt();
+			in.nextLine();
 			System.out.print("輸入性名:");
-			String name=in.next();
+			String name=in.nextLine();
 			System.out.print("輸入暱稱:");
-			String namE=in.next();
-			System.out.println("您的資料如下:\n年齡:"+age+"\n姓名:"+name+"\n暱稱:"+namE);
+			String nickName=in.nextLine();
+			System.out.println("您的資料如下:\n年齡:"+age+"\n姓名:"+name+"\n暱稱:"+nickName);
 		}
 		else{
 			System.out.println("無法註冊");
