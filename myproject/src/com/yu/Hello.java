@@ -12,12 +12,25 @@ public class Hello {
 		p.hello();
 */			
 		
-		Scanner in=new Scanner(System.in);
+/*		Scanner in=new Scanner(System.in);
+		int n=0;
+		do{
+ 		System.out.print("輸入學生姓名:");
 		String studentName = in.next();
+		System.out.print("輸入英文成績:");
 		int english =in.nextInt();
+		System.out.print("輸入數學成績:");
 		int math = in.nextInt();
 		Person transcript = new Person(studentName,english,math);
 		transcript.print();
+		System.out.println("輸入1繼續");
+		n=in.nextInt();
+		}while(n==1);
+		System.out.println("結束程式");
+*/
+		
+		
+		
 	}
 
 }

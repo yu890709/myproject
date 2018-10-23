@@ -19,7 +19,7 @@ public class Person {
 	}
 	
 	public void print(){
-		System.out.print(studentName+"\t"+english+"\t"+math+"\t"+average()+"\n");
+		System.out.print("學生姓名\t英文成績\t數學成績\t平均\n"+studentName+"\t"+english+"\t"+math+"\t"+average()+"\n");
 	}
 
 	
