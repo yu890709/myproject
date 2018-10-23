@@ -9,7 +9,7 @@ public class SignUp {
 		Scanner in=new Scanner(System.in);
 		String line=in.nextLine();
 		boolean adutl=line.equals("y")||line.equals("Y");
-		if(adutl==true){
+		if(adutl){
 			System.out.print("輸入年齡:");
 			int age=in.nextInt();
 			System.out.print("輸入性名:");
