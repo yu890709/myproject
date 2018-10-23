@@ -13,9 +13,9 @@ public class SignUp {
 			System.out.print("輸入年齡:");
 			int age=in.nextInt();
 			System.out.print("輸入性名:");
-			String name=in.nextLine();
+			String name=in.next();
 			System.out.print("輸入暱稱:");
-			String namE=in.nextLine();
+			String namE=in.next();
 			System.out.println("您的資料如下:\n年齡:"+age+"\n姓名:"+name+"\n暱稱:"+namE);
 		}
 		else{
