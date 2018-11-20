@@ -11,15 +11,45 @@ public class Person {
 		this.studentName=studentName;
 		this.english=english;
 		this.math=math;
-	}
+	}	
 	
-	public float average(){
+	public float getAverage(){
 		float average =(float) (english+math)/2;
 		return average;
 	}
 	
+	public String pOrf(){
+		if(getAverage()<60){
+			return "F";
+		}else
+			return "P";
+	}
+	
+	public int getMax(){
+		int max;
+		return max=english>math?english:math;
+	}
+	
+	public char getLevel(){
+		int average=(int)getAverage();
+		switch(average/10){
+		case 10:
+		case 9:
+			return 'A';
+		case 8:
+			return 'B';
+		case 7:
+			return 'C';
+		case 6:
+			return 'D';
+		default:
+			return 'F';
+		}
+	}
+	
 	public void print(){
-		System.out.print("學生姓名\t英文成績\t數學成績\t平均\n"+studentName+"\t"+english+"\t"+math+"\t"+average()+"\n");
+		System.out.print("學生姓名\t英文成績\t數學成績\t最高分\t平均\t等級\t及格?\n"
+						+studentName+"\t"+english+"\t"+math+"\t"+getMax()+"\t"+getAverage()+"\t"+getLevel()+"\t"+pOrf());
 	}
 
 	

@@ -30,7 +30,8 @@ public class Hello {
 		}while(n==1);
 		System.out.println("µ²§ôµ{¦¡");
 */
-		
+		Person stu=new Person("Andy",10,80);
+		stu.print();
 		
 		
 	}
